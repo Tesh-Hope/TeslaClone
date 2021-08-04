@@ -1,16 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, ImageBackground, View } from 'react-native';
-import CarItem from './components/CarItems';
+import { StyleSheet, View } from 'react-native';
+import CarsList from './components/CarsList';
+import Header from './components/Header/index.js';
+
 export default function App() {
   return (
     <View style={styles.container}>
-
-        <CarItem />
+      <Header />
+      <CarsList />
       <StatusBar style="auto" />
     </View>
   );
 }
+
+
 
 const styles = StyleSheet.create({
   container: {
